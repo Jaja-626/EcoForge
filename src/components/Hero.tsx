@@ -43,7 +43,7 @@ export function Hero() {
           
           <p className="text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md text-lg">
             Every AI query you make consumes water. Data centers powering AI models need massive cooling systems. 
-            Discover your AI water footprint and learn how to use artificial intelligence more sustainably.
+            Training GPT-3 alone used an estimated 700,000 liters, and each 20–50 user prompts can consume about 500 mL of water. Discover your AI water footprint and learn how to use artificial intelligence more sustainably.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,6 +5,8 @@ import { AiTips } from './components/AiTips';
 import { Statistics } from './components/Statistics';
 import { TrackingDashboard } from './components/TrackingDashboard';
 import { Footer } from './components/Footer';
+import { WaterBottle } from './components/WaterBottle';
+
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-br from-blue-300/25 to-cyan-300/25 rounded-full blur-2xl bubble-float" style={{ animationDelay: '4s' }} />
         <div className="absolute top-1/3 right-1/3 w-56 h-56 bg-gradient-to-br from-cyan-300/15 to-emerald-300/15 rounded-full blur-3xl bubble-float" style={{ animationDelay: '1s' }} />
         <div className="absolute bottom-1/4 right-10 w-36 h-36 bg-gradient-to-br from-sky-400/20 to-cyan-400/20 rounded-full blur-2xl bubble-float" style={{ animationDelay: '3s' }} />
+         <h1 className="text-center text-slate-700 mb-4">Water Bottle Tracker</h1>
+        <WaterBottle />
       </div>
       
       <div className="relative z-10">
