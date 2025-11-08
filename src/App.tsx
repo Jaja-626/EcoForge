@@ -9,6 +9,18 @@ import { Footer } from './components/Footer';
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-100 via-cyan-50 to-emerald-50 relative overflow-hidden">
+      
+       {/* Fixed Logo in top-left */}
+      <div className="fixed top-4 left-4 z-50">
+        <img 
+  src="/2.png" 
+  alt="Logo" 
+  style={{ height: '150px', width: 'auto' }} 
+/>
+      </div>
+
+      <footer className="w-full relative z-20 bg-blue-900 overflow-hidden text-cyan-200"></footer>
+
       {/* Frutiger Aero bubble decorations */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-cyan-400/30 to-blue-400/30 rounded-full blur-2xl bubble-float" style={{ animationDelay: '0s' }} />
