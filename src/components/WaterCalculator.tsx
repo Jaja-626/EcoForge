@@ -33,10 +33,10 @@ export function WaterCalculator() {
 
     const multiplier = modelMultipliers[aiModel];
     
-    const chatWater = chatQueries[0] * 50 * multiplier; // ~50ml per query
-    const imageWater = imageGen * 100 * multiplier; // ~100ml per image
-    const codeWater = codeAssist * 75 * multiplier; // ~75ml per code query
-    const videoWater = videoStream * 200 * multiplier; // ~200ml per hour
+    const chatWater = chatQueries[0] * 20 * multiplier; // ~20ml per query
+    const imageWater = imageGen * 50 * multiplier; // ~50ml per image
+    const codeWater = codeAssist * 150 * multiplier; // ~150ml per code query
+    const videoWater = videoStream * 500 * multiplier; // ~500ml per hour
 
     const dailyUsage = chatWater + imageWater + codeWater + videoWater;
     const monthlyUsage = dailyUsage * 30;
@@ -131,7 +131,7 @@ export function WaterCalculator() {
                 step={1}
                 className="w-full"
               />
-              <p className="text-gray-500 mt-1">~50ml water per query</p>
+              <p className="text-gray-500 mt-1">~20ml water per query</p>
             </div>
 
             <div>
@@ -145,11 +145,11 @@ export function WaterCalculator() {
                 max={100}
                 className="mt-2"
               />
-              <p className="text-gray-500 mt-1">~100ml water per image</p>
+              <p className="text-gray-500 mt-1">~50ml water per image</p>
             </div>
 
             <div>
-              <Label htmlFor="codeAssist">AI coding assistant queries per day (GitHub Copilot, etc.)</Label>
+              <Label htmlFor="codeAssist">Active chat sessions </Label>
               <Input
                 id="codeAssist"
                 type="number"
@@ -159,11 +159,11 @@ export function WaterCalculator() {
                 max={200}
                 className="mt-2"
               />
-              <p className="text-gray-500 mt-1">~75ml water per query</p>
+              <p className="text-gray-500 mt-1">~150mL water per query</p>
             </div>
 
             <div>
-              <Label htmlFor="videoStream">AI-powered video/streaming hours per day</Label>
+              <Label htmlFor="videoStream">Training Small Custom Models (fine-tuning 1 h on cloud GPU)</Label>
               <Input
                 id="videoStream"
                 type="number"
@@ -174,7 +174,7 @@ export function WaterCalculator() {
                 step={0.5}
                 className="mt-2"
               />
-              <p className="text-gray-500 mt-1">~200ml water per hour</p>
+              <p className="text-gray-500 mt-1">~500ml water per hour</p>
             </div>
 
             <div>
