@@ -9,7 +9,7 @@ interface RollingCounterProps {
 }
 
 export default function RollingCounter({
-  start = 0,
+  start = 200246,
   increment = 1,
   intervalMs = 10000,
 }: RollingCounterProps) {

@@ -64,7 +64,7 @@ export function Hero() {
 
         {/* Rolling Counter Section */}
         <div className="flex flex-col items-center gap-2 mt-8">
-        <RollingCounter start={0} increment={1} intervalMs={1000} />
+        <RollingCounter start={20246} increment={1} intervalMs={1000} />
         <span className="text-3xl sm:text-4xl text-white font-semibold drop-shadow-lg">
         liters of water saved by Query Drop users (estimated)
   </span>
