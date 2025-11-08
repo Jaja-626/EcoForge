@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
       "name": "EcoForge",
+=======
+      "name": "Sustainability Water Saving Website",
+>>>>>>> 0ca1fb667eafc6bd21ea7316f5a4c800589cff20
       "version": "0.1.0",
       "private": true,
       "dependencies": {
