@@ -34,6 +34,17 @@ export function Hero() {
             <div className="absolute inset-0 w-10 h-10 bg-cyan-200/40 rounded-full blur-lg" />
           </div>
         </div>
+        <div className="relative overflow-hidden">
+
+      {/* Logo in top-left */}
+      <div className="absolute top-6 left-6 z-50 flex items-center gap-2">
+        <img 
+          src="/logo.png" 
+          alt="Drop Query Logo" 
+          className="w-12 h-12 object-contain" 
+        />
+        <h2 className="text-white text-2xl font-bold">Drop Query</h2>
+      </div>
 
         <h1 className="text-white mb-6 drop-shadow-lg text-4xl sm:text-5xl font-extrabold">
           The Hidden Water Cost of AI
@@ -71,5 +82,6 @@ export function Hero() {
 </div>
       </div>
     </div>
+  </div>
   );
 }
